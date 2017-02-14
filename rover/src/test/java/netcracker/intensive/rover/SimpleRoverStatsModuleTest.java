@@ -9,7 +9,7 @@
 //
 //public class SimpleRoverStatsModuleTest {
 //
-//    private RoverStatsModule testedInstance = new SimpleRoverStatsModule();
+//private RoverStatsModule testedInstance = new SimpleRoverStatsModule();
 //
 //    @Test
 //    public void testRegisterPositionAddsNewPoint() {

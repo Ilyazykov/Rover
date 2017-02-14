@@ -1,22 +1,22 @@
-//package netcracker.intensive.rover;
-//
-//import netcracker.intensive.rover.constants.Direction;
-//import org.junit.Test;
-//
-//import static org.junit.Assert.*;
-//
-//public class RoverTest extends AbstractRoverTest {
-//
-//    private Rover testedInstance = new Rover(new GroundVisor(GROUND_3x3));
-//
-//    @Test
-//    public void testMoveToTheRightFreeCell() {
+package netcracker.intensive.rover;
+
+import netcracker.intensive.rover.constants.Direction;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class RoverTest extends AbstractRoverTest {
+
+    private Rover testedInstance = new Rover(new GroundVisor(GROUND_3x3));
+
+    @Test
+    public void testMoveToTheRightFreeCell() {
 //        testedInstance.turnTo(Direction.EAST);
 //        testedInstance.move();
-//
+
 //        assertEquals(new Point(1, 0), testedInstance.getCurrentPosition());
-//    }
-//
+    }
+
 //    @Test
 //    public void testMoveDownwardsToFreeCell() {
 //        testedInstance.move();
@@ -127,4 +127,4 @@
 //            assertEquals(direction, testedInstance.getDirection());
 //        }
 //    }
-//}
+}

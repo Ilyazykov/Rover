@@ -1,8 +1,15 @@
 package netcracker.intensive.rover;
 
-public class GroundVisor {
+import netcracker.intensive.rover.constants.CellState;
 
-    public GroundVisor(Ground ground_2x2) {
-        //TODO
+public class GroundVisor {
+    private Ground ground;
+
+    public GroundVisor(Ground ground) {
+        this.ground = ground;
+    }
+
+    public boolean hasObstacles(Point point) throws OutOfGroundException {
+        return ground.getCell(point.x, point.y).getState() == CellState.OCCUPIED;
     }
 }
