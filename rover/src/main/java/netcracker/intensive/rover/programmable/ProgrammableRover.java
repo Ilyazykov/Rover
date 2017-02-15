@@ -9,9 +9,14 @@ import netcracker.intensive.rover.stats.SimpleRoverStatsModule;
  * содержащиеся в файлах
  */
 public class ProgrammableRover extends Rover {
+    SimpleRoverStatsModule simpleRoverStatsModule;
 
     public ProgrammableRover(GroundVisor groundVisor, SimpleRoverStatsModule simpleRoverStatsModule) {
         super(groundVisor);
+        this.simpleRoverStatsModule = simpleRoverStatsModule;
+    }
+
+    public void executeProgramFile(String file) {
         //TODO
     }
 }
