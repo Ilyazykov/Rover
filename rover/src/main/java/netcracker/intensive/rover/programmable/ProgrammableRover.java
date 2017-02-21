@@ -16,7 +16,7 @@ import java.util.Map;
  * содержащиеся в файлах
  */
 public class ProgrammableRover extends Rover {
-    private SimpleRoverStatsModule simpleRoverStatsModule;
+    private SimpleRoverStatsModule simpleRoverStatsModule; //TODO dont used for a tests
     private RoverCommandParser commandParser;
     private Map<String, Object> settings;
 
