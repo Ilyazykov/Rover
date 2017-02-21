@@ -51,28 +51,31 @@ public class RoverProgram {
             }
 
             while ((line = reader.readLine()) != null) {
-                if ((boolean)(settings.get(LOG))) {
-                    commands.add(new LoggingCommand());
-                }
                 Direction direction;
+                RoverCommand command = new MoveCommand(rover);
                 String[] lexems = line.split(" ");
                 switch (lexems[0]) {
-                    case "move":
-                        commands.add(new MoveCommand(rover));
-                        break;
                     case "turn":
                         direction = getDirection(lexems[1]);
-                        commands.add(new TurnCommand(rover, direction));
+                        command = new TurnCommand(rover, direction);
                         break;
                     case "lift":
-                        commands.add(new LiftCommand(rover));
+                        command = new LiftCommand(rover);
                         break;
                     case "land":
                         int x = Integer.parseInt(lexems[1]);
                         int y = Integer.parseInt(lexems[2]);
                         direction = getDirection(lexems[3]);
-                        commands.add(new LandCommand(rover, new Point(x, y), direction));
+                        command = new LandCommand(rover, new Point(x, y), direction);
+                        break;
                 }
+
+                if ((boolean)(settings.get(LOG))) {
+                    commands.add(new LoggingCommand(command));
+                } else {
+                    commands.add(command);
+                }
+
             }
         } finally {
             reader.close();

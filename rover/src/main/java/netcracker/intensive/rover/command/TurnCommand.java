@@ -14,7 +14,7 @@ public class TurnCommand implements RoverCommand {
 
     @Override
     public void execute() {
-        //TODO
+        rover.turnTo(direction);
     }
 
     @Override
@@ -36,5 +36,22 @@ public class TurnCommand implements RoverCommand {
         result = PRIME * result + rover.hashCode();
         result = PRIME * result + direction.hashCode();
         return result;
+    }
+
+    @Override
+    public String toString() {
+        String textDirection = "EAST";
+        switch (direction) {
+            case NORTH:
+                textDirection = "NORTH";
+                break;
+            case WEST:
+                textDirection = "WEST";
+                break;
+            case SOUTH:
+                textDirection = "SOUTH";
+                break;
+        }
+        return "Heading " + textDirection;
     }
 }

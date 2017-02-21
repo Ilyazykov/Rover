@@ -17,6 +17,6 @@ public class ProgrammableRover extends Rover {
     }
 
     public void executeProgramFile(String file) {
-        //TODO
+        System.out.println(file);
     }
 }

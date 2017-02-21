@@ -18,7 +18,7 @@ public class LandCommand implements RoverCommand {
 
     @Override
     public void execute() {
-        //TODO
+        rover.land(position, direction);
     }
 
     @Override
@@ -42,5 +42,22 @@ public class LandCommand implements RoverCommand {
         result = PRIME * result + direction.hashCode();
         result = PRIME * result + position.hashCode();
         return result;
+    }
+
+    @Override
+    public String toString() {
+        String textDirection = "EAST";
+        switch (direction) {
+            case NORTH:
+                textDirection = "NORTH";
+                break;
+            case WEST:
+                textDirection = "WEST";
+                break;
+            case SOUTH:
+                textDirection = "SOUTH";
+                break;
+        }
+        return "Land at " + position.toString() + " heading " + textDirection;
     }
 }

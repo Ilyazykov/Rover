@@ -13,7 +13,7 @@ public class MoveCommand implements RoverCommand {
 
     @Override
     public void execute() {
-        //TODO
+        rover.move();
     }
 
     @Override
@@ -32,5 +32,10 @@ public class MoveCommand implements RoverCommand {
     public int hashCode() {
         final int PRIME = 31;
         return PRIME + rover.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Rover moved";
     }
 }

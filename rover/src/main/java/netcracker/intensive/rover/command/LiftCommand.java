@@ -6,12 +6,12 @@ public class LiftCommand implements RoverCommand {
     Rover rover;
 
     public LiftCommand(Rover rover) {
-        //TODO
+        this.rover = rover;
     }
 
     @Override
     public void execute() {
-        //TODO
+        rover.lift();
     }
 
     @Override
@@ -30,5 +30,10 @@ public class LiftCommand implements RoverCommand {
     public int hashCode() {
         final int PRIME = 31;
         return PRIME + rover.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Rover lifted";
     }
 }
