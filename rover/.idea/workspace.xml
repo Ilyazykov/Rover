@@ -16,23 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractCommandTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/AbstractCommandTest.java">
+      <file leaf-file-name="ProgrammableRoverTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/ProgrammableRoverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <marker date="1487122640840" expanded="true" signature="0:809" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggingCommandTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LoggingCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,14 +28,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoggingCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LoggingCommand.java">
+      <file leaf-file-name="ProgrammableRover.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/ProgrammableRover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="299">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoverCommandParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/RoverCommandParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="86" column="59" lean-forward="false" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="program.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,16 +101,16 @@
         <option value="$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LandCommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LandCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/Point.java" />
-        <option value="$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LoggingCommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/RoverProgram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/ProgrammableRover.java" />
-        <option value="$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/ProgrammableRoverTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LoggingCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LoggingCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/ProgrammableRoverTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/ProgrammableRover.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4033" />
+    <option name="x" value="-2667" />
     <option name="y" value="24" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
@@ -120,9 +130,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,6 +344,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -701,39 +711,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_rover - 2017.02.15 at 08h 12m 56s.xml">
-      <configuration name="All in rover" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_rover - 2017.02.15 at 08h 17m 24s.xml">
-      <configuration name="All in rover" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_rover - 2017.02.15 at 08h 18m 03s.xml">
-      <configuration name="All in rover" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.21 at 22h 44m 22s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 19m 05s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.21 at 23h 20m 27s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 12m 44s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 11m 17s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 13m 43s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 12m 40s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 24m 04s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 12m 58s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 24m 39s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 13m 10s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 25m 40s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rover_(1) - 2017.02.22 at 00h 13m 36s.xml">
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 37m 10s.xml">
+      <configuration name="All in rover (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 37m 43s.xml">
+      <configuration name="All in rover (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 52m 42s.xml">
+      <configuration name="All in rover (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rover_(1) - 2017.02.22 at 01h 58m 45s.xml">
       <configuration name="All in rover (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4033" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="-2667" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -751,7 +761,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18985395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18908532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1002,57 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/RoverCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/Rover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program_with_log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program_with_stats.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/RoverCommandParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,18 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/MoveCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/TurnCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1096,18 +1047,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#578#579#0" expanded="false" />
             <element signature="e#615#616#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LiftCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#457#458#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1171,24 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LiftCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/RoverProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1196,24 +1117,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/ProgrammableRoverTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LoggingCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="525">
+          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/ProgrammableRover.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LoggingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/Rover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,22 +1155,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LoggingCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/MoveCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="270">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LiftCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/LiftCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#192#193#0" expanded="false" />
+            <element signature="e#226#227#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/command/RoverCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/RoverProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="30" />
+          <folding>
+            <element signature="e#2791#2792#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/RoverCommandParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="86" column="59" lean-forward="false" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program_with_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/netcracker/intensive/rover/programmable/program_with_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/programmable/ProgrammableRoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/netcracker/intensive/rover/command/LoggingCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/netcracker/intensive/rover/programmable/ProgrammableRover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="299">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
           </folding>
         </state>
       </provider>
