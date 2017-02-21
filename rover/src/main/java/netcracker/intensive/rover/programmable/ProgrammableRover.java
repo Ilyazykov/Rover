@@ -3,6 +3,7 @@ package netcracker.intensive.rover.programmable;
 import netcracker.intensive.rover.GroundVisor;
 import netcracker.intensive.rover.Rover;
 import netcracker.intensive.rover.command.RoverCommand;
+import netcracker.intensive.rover.stats.RoverStatsModule;
 import netcracker.intensive.rover.stats.SimpleRoverStatsModule;
 
 import javax.management.openmbean.CompositeData;
@@ -16,13 +17,13 @@ import java.util.Map;
  * содержащиеся в файлах
  */
 public class ProgrammableRover extends Rover {
-    private SimpleRoverStatsModule simpleRoverStatsModule; //TODO dont used for a tests
+    private RoverStatsModule roverStatsModule; //TODO dont used for a tests
     private RoverCommandParser commandParser;
     private Map<String, Object> settings;
 
-    public ProgrammableRover(GroundVisor groundVisor, SimpleRoverStatsModule simpleRoverStatsModule) {
+    public ProgrammableRover(GroundVisor groundVisor, RoverStatsModule roverStatsModule) {
         super(groundVisor);
-        this.simpleRoverStatsModule = simpleRoverStatsModule;
+        this.roverStatsModule = roverStatsModule;
     }
 
     public void executeProgramFile(String file) {
@@ -33,6 +34,10 @@ public class ProgrammableRover extends Rover {
 
         for (RoverCommand command : commands) {
             command.execute();
+
+            if (settings.get(RoverProgram.STATS).equals(true)) {
+                roverStatsModule.registerPosition(this.getCurrentPosition());
+            }
         }
     }
 
